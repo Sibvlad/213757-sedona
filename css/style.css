@@ -1,21 +1,38 @@
 body {
-    font-size:;
-    line-height:;
-    color:;
-    font-weight:;
-    font-family:;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: normal;
+    font-family: "PTSans Regular";
 }
 h2 {
-    font-size:;
-    line-height:;
-    color:;
-    font-weight:;
-    font-family:;    
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PTSans";    
+}
+h2 {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PTSans";    
+}
+.features h2 {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PTSans";      
+}
+.background-blue h2 {
+    color: #ffffff;     
 }
 h3 {
-    font-size:;
-    line-height:;
-    color:;
-    font-weight:;
-    font-family:;    
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "PTSans";    
 }
