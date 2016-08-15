@@ -3,10 +3,154 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <container>
+      <header class="main-header">
+        <a href="#"> 
+          <img src="img/logo.png"  width="40" height="40" alt="logo">
+        </a>
+         <nav class="main-navigation">     
+           <ul> 
+             <li> 
+               <a href="#">Информация</a>
+             </li>
+             <li> 
+               <a href="#">Фото и видео</a>
+             </li> 
+             <li> 
+               <a href="#">Карта штата</a>
+             </li>
+             <li> 
+               <a href="catalog.html">Гостиницы</a>
+             </li>    
+           </ul>      
+         </nav>
+      </header>
+      <main>
+        <div class="sedona-intro">
+          <div class="sedona-welcome-image">
+              <img src="img/in-slogan.png" alt="">
+          </div>
+          <div class="intro-text">
+            <h2>Седона-небольшой город в Аризоне, заслуживающий большего!</h2>
+            <p>Рассмотрим 5 причин по которой Седона круче, чем Гранд Каньон!</p>
+          </div>
+        </div>
+        <section class="features-sedona"> 
+          <div class="features background-blue">
+            <div class="features-words">
+              <h2>Настоящий город</h2>
+              <p>№1</p>
+              <p>Седона не аттракцион  для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="features-image">
+              <img src="img/city.jpg" alt="" width="300" height="150">
+            </div>
+          </div>
+          <div class="features">
+            <div class="features-item">
+               <img src="img/house.png" alt="" width="40" height="40">
+               <h2>Жилье</h2>      
+               <p>Рекомендуем пожить в настоящем в мотеле, все как в кино!</p>
+            </div>
+            <div class="features-item">
+              <img src="img/burger.png" alt="" width="40" height="40">
+              <h2>Бургеры</h2>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь.</p>
+            </div>
+            <div class="features-item">
+              <img src="img/souvenir.png" alt="" width="40" height="40">
+              <h2>Сувениры</h2>
+              <p>Не только китайского, но и местного прозводства</p>
+            </div>
+          </div>
+          <div class="features background-blue">  
+            <div class="features-image">
+              <img src="img/mountains.jpg" alt="" width="300" height="150">
+            </div>
+            <div class="features-words">
+              <h2>Там есть мост дьявола</h2> 
+              <p>№2</p> 
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </div>
+          <div class="features background-grey">
+            <div class="features-words">
+              <h2>Небольшая площадь</h2>
+              <p>№3</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="features-words">
+              <h2>Красивая дорога</h2>
+              <p>№4</p>
+              <p>Ехать в Седону из Лас-Вегасе совсем не скучно!</p>
+            </div>
+            <div class="features-words">
+              <h2>Мало туристов</h2>
+              <p>№5</p>
+              <p>Большинство едет в Гранд Каньон и толпится там!</p>
+            </div>
+          </div>
+        </section>        
+        <section class="research-form">
+          <div class="intro-reseach">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц</p>
+          </div>
+          <div class="reseach-hotel">
+            <div class="reseach-top">
+              <h2>Поиск гостиницы в седоне</h2>
+            </div>
+            <div class="reseach-form">
+              <form action="#" method="get">  
+                <div class="date-search">
+                  <label for="arrival-field">Дата заезда</label>
+                  <input  type="text" name="arrival" id="arrival-field"   value="24 апреля 2014">
+                  <label for="departure-field">Дата отъезда</label>
+                  <input class="date-form" type="text" name="departure" id="departure-field" class="date-form"  value="4 июля 2014">
+                </div>
+                <div class="count">
+                  <label for="adultes">Взрослые</label>
+                  <div class="count-adulte">
+                    <button type="button" name="adulte-minus" class="icon-minus">-</button>
+                    <input type="number" name="adulte" id="adultes" value="2">
+                    <button type="button" name="adulte-plus" class="icon-plus">+</button>
+                  </div>
+                  <label for="child">Дети</label>
+                  <div class="count-child">
+                    <button type="button" name="child-minus" class="icon-minus">-</button>
+                    <input type="number" name="child" id="child" value="0">
+                    <button type="button" name="child-plus" class="icon-plus">+</button>
+                  </div>
+                    <input type="submit" name="child" class="btn-reseach" value="Показать">
+                </div>
+                <div class="map-reseach">
+                  <img src="img/map.jpg" width="1000" height="400">
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>         
+      <footer class="main-footer">
+        <div class="footer-hashtag">
+          <p class="hashtag">#visitsedona</p>
+        </div>
+        <div class="social-media">
+          <a class="btn-social btn-social-tw" href="#">Twitter</a>
+          <a class="btn-social btn-social-fb" href="#">Facebook</a>
+          <a class="btn-social btn-social-yt" href="#">Youtube</a>
+        </div>  
+        <div class="footer-link">
+          <p class="website"> website be</p>
+          <a href="#"></a>
+        </div>
+      </footer>
+    </container>
   </body>
 </html>
+
+              
+   
