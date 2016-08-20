@@ -6,12 +6,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <container>
+    <container class="clearfix">
       <header class="main-header">
         <a href="#"> 
-          <img src="img/logo.png"  width="40" height="40" alt="logo">
+          <img src="img/logo.png" width="140" height="70" alt="logo">
         </a>
-         <nav class="main-navigation">     
+         <nav class="main-navigation">    
           <ul> 
             <li> 
               <a href="#">Информация</a>
@@ -32,41 +32,55 @@
         <section class="choice-hotel">
           <div class="search-option">
             <form action="#" method="get">
-              <div class="search-content-left">
-                <div class="question">
-                  <h3>Инфраструктура:</h3>
-                  <input type="checkbox" name="pool" id="pool-field" checked>
-                  <label for="pool-field">Бассейн</label>
-                  <input type="checkbox" name="parking" id="parking-field">
-                  <label for="parking-field">Парковка</label>
-                  <input type="checkbox" name="wi-fi" id="wifi-field">
-                  <label for="wifi-field">Wi-fi</label>
+              <div сlass="search-content-left">
+                <div class="legend-left">
+                   <h3>Инфраструктура:</h3>
+                   <div class="filter-row">
+                     <input type="checkbox" name="pool" id="pool-field" checked>
+                     <label for="pool-field">Бассейн</label>
+                   </div>
+                   <div class="filter-row">
+                     <input type="checkbox" name="parking" id="parking-field">
+                     <label for="parking-field">Парковка</label>
+                   </div>
+                   <div class="filter-row">
+                     <input type="checkbox" name="wi-fi" id="wifi-field">
+                     <label for="wifi-field">Wi-fi</label>
+                   </div>
+                 </div>
+                 <div class="legend-right">
                   <h3>Тип жилья:</h3>
-                  <input type="checkbox" name="hotel" id="hotel-field" checked>
-                  <label for="hotel-field">Гостиница</label>
-                  <input type="checkbox" name="motel" id="motel-field" checked>
-                  <label for="motel field">Мотель</label>
-                  <input type="checkbox" name="apart" id="apart-field" checked>
-                  <label for="apart-field">Апартаменты</label>   
-                </div>
-              </div>
+                  <div class="filter-row">
+                    <input type="checkbox" name="hotel" id="hotel-field" checked>
+                    <label for="hotel-field">Гостиница</label>
+                  </div>
+                  <div class="filter-row">
+                    <input type="checkbox" name="motel" id="motel-field" checked>
+                    <label for="motel field">Мотель</label>
+                  </div>
+                  <div class="filter-row">
+                    <input type="checkbox" name="apart" id="apart-field" checked>
+                    <label for="apart-field">Апартаменты</label>
+                  </div>
+                  </div>
+                 </div>
               <div class="search-content-right">
                 <h3>Стоимость в сутки(р):</h3>
                 <div class="cost-form">
-                  <input type="text" name="cost" value="" placeholder="ОТ 0">
-                  <input type="text"  name="cost" value="" placeholder="ДО 3000">   
+                    <input type="text" name="cost" value="" placeholder="ОТ 0">
+                  <input type="text"  name="cost" value="" placeholder="ДО 3000">  
                 </div>
                 <div class="cost-slider">
                   <input type="range" name="cost" min="0" max="3000">
                 </div>
-              </div>
-                  <input type="submit" value="Показать">
+                <input type="submit" value="Показать">
+             </div>    
             </form>
-          </div>
+           </div>
         </section>
         <section class="results-hotel"> 
           <div class ="filter-sorting">
-            <h2>Найдено: 3</h2>
+            <h2>Найдено: 3</h2> 
             <p class="sorting">Сортировка:</p>
             <ul class="parameters">
               <li>
@@ -78,8 +92,8 @@
               <li>
                 <a class="filter" href="#">по рейтингу</a>
               </li>
-            </ul>   
-          </div>  
+            </ul>
+           </div> 
           <div class="results">
             <article class="results-hotel">
               <div class="hotel-item-left">
