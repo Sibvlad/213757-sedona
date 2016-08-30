@@ -193,6 +193,7 @@ container {
 .background-blue {
     background: #81b3d2;
     height: 255px;
+    width: 100%;
     text-align: center;
     border: none;
     outline: none;
@@ -207,19 +208,16 @@ container {
     width: 800px;
     float: left;
     background: none;
-    font-size: 0px;
     border: none;
     outline: none;
 }
 .city{
-    background: #ffffff url(../img/city3.jpg) no-repeat center center;
-    width: inherit;
-    height: 255px;
+    background: url(../img/city3.jpg) no-repeat center center;
+    border: none;
+    outline: none; 
 }
 .mountains {
     background: url(../img/mountains3.jpg) no-repeat center center #ffffff;
-    width: inherit;
-    height: 255px;
     border: none;
     outline: none; 
 }
@@ -447,7 +445,7 @@ container {
 }
 .index-footer {
     position: absolute;
-    opacity: 0.9;
+    background: rgba(255, 255, 255, 0.9);
     bottom: 0;
 }
 .footer-hashtag {
@@ -568,7 +566,7 @@ input[type="checkbox"]+label::before {
     left: 0;
     font-size: 26px;
     font-family: "symbols-sedona";
-    opacity: 0.3;
+    opacity: 0.7;
 }
 input[type="checkbox"]+label:hover::before {
     opacity: 1;
