@@ -190,7 +190,7 @@ h3 {
 }
 .features {
     width: 100%;
-    height: 256px;
+    min-height: 255px;
     text-align: center;   
 }
 .background-blue {
@@ -401,6 +401,7 @@ h3 {
     opacity: 1;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 .btn-research:hover {
     background: #669ec0;
@@ -712,23 +713,24 @@ input[type="checkbox"]:checked+label::before {
     text-decoration: none; 
     color: #81b3d2;
 }
-.dir span {
+.dir {
+    font-size: 0px;
+}
+.icon-up-dir, .icon-down-dir {
+    color: #cccccc;
     display: inline-block;
     margin-top: 35px;
     font-size: 23px;
     line-height: 20px;
-   
-}
-.icon-up-dir, .icon-down-dir {
-    color: #cccccc;
+    cursor: pointer;  
 } 
 .icon-down-dir {
     color: #81b3d2;
 } 
-.dir span:hover {
+.dir a:hover {
     color: #000000;   
 }
-.dir span:active {
+.dir a:active {
     color: #81b3d2;   
 }
 .icon-up-dir {
@@ -750,12 +752,13 @@ input[type="checkbox"]:checked+label::before {
 .hotel-item-right {
     float: right;
     height: auto;
+    font-size: 0px;
 }
 .star{
     display: inline-block;
     margin-top: 30px;
     float: right;
-    margin-right: 73px;
+    margin-right: 70px;
     margin-bottom: 30px;
 }
 .star span {
@@ -835,7 +838,7 @@ input[type="checkbox"]:checked+label::before {
 }
 .hotel-detail p {
     display: block;
-    margin-top: 9px; 
+    margin-top: 9px
 }
 .rating {
     width: 111px;
@@ -846,4 +849,7 @@ input[type="checkbox"]:checked+label::before {
     color: #b1b1b1;
     padding-top: 3px;
     margin-right: 73px;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "PT Sans";
 }
