@@ -1,5 +1,5 @@
-var link = document.querySelector(".research-top");
-var popup = document.querySelector(".research-form");
+var link = document.querySelector(".research-top"); 
+var popup = document.querySelector (".research-form");
 var form = popup.querySelector("form"); 
 var arrival = popup.querySelector("[name=arrival]"); 
 var departure = popup.querySelector("[name=departure]"); 
@@ -7,6 +7,7 @@ var adulte = popup.querySelector("[name=adulte]");
 var child= popup.querySelector("[name=child]");
 var storage = localStorage.getItem("adulte");
 var storage = localStorage.getItem("child");
+
 
 link.addEventListener("click", function(event) {
     event.preventDefault();
@@ -22,3 +23,5 @@ form.addEventListener("submit", function(event) {
     localStorage.setItem("child", child.value);    
 }
 });
+
+    
