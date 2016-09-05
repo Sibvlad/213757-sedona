@@ -3,7 +3,7 @@ body {
     line-height: 21px;
     color: #000000;
     font-weight: normal;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -11,32 +11,28 @@ body {
     background: #f2f2f2;
 }
 @font-face {
-  font-weight: normal;
-  font-style: normal;
-
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
+    font-weight: normal;
+    font-style: normal;
+    font-family: "symbols-sedona";
+    src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-
-  speak: none;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    font-weight: normal;
+    line-height: 1em;
+    font-family: "symbols-sedona";
+    text-align: center;
+    text-transform: none;
+    text-decoration: inherit;
+    font-style: normal;
+    font-variant: normal;
+    speak: none;
 }
-
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
 .icon-up-dir::before { content: "\25b2"; } /* "▲" */
@@ -48,66 +44,62 @@ body {
 .icon-plus::before { content: "\e801"; } /* "" */
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
-
 .sprite {
     background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
-
 .sprite-logo-black {
     width: 113px;
     height: 39px;
     background-position: -10px -10px;
 }
-
 .sprite-logo-blue {
     width: 113px;
     height: 39px;
     background-position: -10px -69px;
 }
-
 .sprite-logo-grey {
     width: 113px;
     height: 39px;
     background-position: -10px -128px;
 }
 .clearfix::after {
-  content: "";
-
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 h2 {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 .features h2 {
     font-size: 21px;
     line-height: 21px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     width: 180px;
     margin: 0 auto;
     margin-bottom: 25px;
 }
 .background-blue h2 {
-    color: #ffffff;     
+    color: #ffffff;
+    width: 151px;
 }
 h3 {
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
     font-weight: bold;
-    font-family: "PT Sans";    
+    font-family: "PT Sans", "Arial", sans-serif;    
 }
 .features p {
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     width: 300px;  
  }
 .container, .main-header, main, footer {
@@ -124,7 +116,7 @@ h3 {
     min-height: 56px;
     position: relative;
 }
-.main-header>a{
+.main-header>a {
     position: absolute;
     left: 531px;
 }
@@ -133,38 +125,43 @@ h3 {
     background: white;
     width: 100%;
     min-height: 56px;
+    font-size: 0
 }
-.main-navigation ul{
+.main-navigation ul {
     padding: 0;
     margin: 0;
-    font-size: 0;
     list-style: none;
     margin-left: 6%;
 }
-.main-navigation li{
+.main-navigation li {
     display: inline-block; 
     vertical-align: top;
     width: 20%;
     font-weight: 700;
-    font-family: "PT Sans", sans-serif;
 }
-.main-navigation a{
+.main-navigation a {
     font-size: 14px;
-    line-height: 56px;
+    line-height: 55px;
     text-decoration: none;
     color: black;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
 }
-.main-navigation a:hover{
-    color: #81b3d2
+.main-navigation a:hover {
+    color: #81b3d2;
 }
-.main-navigation a:active{
+.main-navigation a:active {
     color: #b2b2b2;
 }
 .main-navigation li:nth-child(2) {
-    margin-right: 150px;
+    margin-right: 120px;
+    padding-left: 15px;
 }
-.main-navigation li:nth-child(3), .main-navigation li:nth-child(4){
-    text-align: right
+.main-navigation li:nth-child(3), .main-navigation li:nth-child(4) {
+    text-align: right;
+}
+.main-navigation li:nth-child(3) {
+    margin-right: 20px;
 }
 .main-navigation .nav-active {
     color: #766357;
@@ -195,13 +192,13 @@ h3 {
     display: block;
     width: 100%;
     height: 275px;
-    padding-top: 125px;
+    padding-top: 115px;
 }
 .intro-text h2 {
     width: 460px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 }
 .intro-text p {
     width: 540px;
@@ -223,7 +220,10 @@ h3 {
 .background-blue .features-words {
     float: left;
     width: 400px; 
-    margin-top: 52px;
+    margin-top: 54px;
+}
+.background-blue p {
+    width: 306px;
 }
 .features-image {
     float: left;
@@ -234,54 +234,64 @@ h3 {
     padding-bottom: 85px;
     background: white;
 }
-.features-advantage h2{
-   margin-top: 26px;   
+.features-advantage h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .features-item {
     float: left;
     text-align: center;
     width: 300px;
-    margin-right: 90px;
+    margin-right: 102px;
 }
  .features-item:first-child {
-    margin-left: 5%;
+    margin-left: 4%;
 }
 .features-item:last-child {
-    margin-right: 5%;
+    margin-right: 4%;
 }
 .background-grey {
     background: #eeeeee;
 }
 .background-grey .features-words {
     float: left;
-    margin-right: 90px;
-    margin-top: 45px;
+    margin-right: 143px;
+    margin-top: 43px;
+}
+.background-grey h2 {
+    width: 110px;
+}
+.background-grey p {
+    width: 260px;
 }
 .background-grey .features-words:first-child {
-    margin-left: 5%;
+    margin-left: 67px;
 }
 .background-grey .features-words:last-child {
-    margin-right: 5%;
+    margin-right: 0;
 }
 .research {
     background: white;
 }
 .intro-research {
     width: 567;
+    height: 175px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 53px; 
+    padding-top: 33px; 
 } 
 .intro-research h2 {
     font-size: 30px;
     line-height: 24px;
-    font-family: "PT Sans", sans-serif;
-    margin-bottom: 28px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    margin-bottom: 30px;
 }
 .intro-research p {
     font-size: 14px;
     line-height: 24px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
+    width: 440px;
+    margin: 0 auto;
 }
 .research-hotel {
     width: 567px;
@@ -289,7 +299,7 @@ h3 {
     background: #766357;
     position: relative;
     margin: 0 auto;
-    margin-top: 55px;
+    margin-top: 0px;
     cursor: pointer;
 }
 .research-top a{
@@ -301,7 +311,7 @@ h3 {
     margin-bottom: 0px;
     font-size: 21px;
     line-height: 26px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
 }
 .research-form {
@@ -312,13 +322,13 @@ h3 {
     background: white;
     display: none;
 }
+.no-js .research-form-inner{
+    display: block;
+}
 .research-form-show {
     display: block;
     -webkit-animation: bounce 0.6s;
             animation: bounce 0.6s;
-}
-.no-js .research-form-inner{
-    display: block;
 }
 .research-form-inner {
     position: relative;
@@ -329,20 +339,18 @@ h3 {
     margin-top: 55px;
     margin-bottom: 55px;
 }
-
 .form-index {
     font-size: 0px;
-    padding-left: 50px;
+    padding-left: 57px;
     padding-top: 55px;
 }
-.form-index label, .form-index input, .count button  {
+.form-index label, .form-index input, .count button {
     font-size: 14px;
-    line-height: 26px;
+    line-height: 36px;
     font-weight: 700;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     outline: none;
 }
-
 .date-search {
     position: relative;
     display: block;
@@ -354,11 +362,11 @@ h3 {
    border: 0px;
 } 
 .date-search input {
-    width: 335px;
+    width: 330px;
     background: #f2f2f2;
     text-transform: uppercase;
     margin-bottom: 30px;
-    padding: 10px 10px;
+    padding-left: 15px;
 } 
 .date-search input:hover {
     background: #ebebeb;   
@@ -375,7 +383,8 @@ h3 {
     position: absolute;
     height: 25px;
     width: 25px;
-    left: 430px;
+    left: 425px;
+    padding-top: 5px;
     background: #f2f2f2;
     opacity: 0.3;
 }
@@ -384,22 +393,18 @@ h3 {
     background: #ebebeb; 
 }
 .date-search label:active::after {
-   color: #92bdd8;
-   background: #ffffff;
+    color: #92bdd8;
+    background: #ffffff;
 }
 .date-search label {
-    margin-right: 20px;
-    padding-top: 10px; 
+    margin-right: 23px;
 }
 #departure-field {
     margin-left: -5px;
 }
 .count label, .count input, .count button {
-   float: left;  
+    float: left;  
 } 
-.count label {
-    padding-top: 5px;
-}
 .count input, .count button {
     width: 38px;
     height: 38px;
@@ -425,13 +430,13 @@ h3 {
     color: #81b3d2;
 }
 .count label {
-    margin-right: 31px;  
+    margin-right: 25px;  
 }
 .count label:first-child {
     margin-right: 38px;  
 }
 .count-adulte .icon-plus {
-   margin-right: 54px;  
+    margin-right: 54px;  
 }
 .btn-research {
     width: 458px;
@@ -471,7 +476,7 @@ h3 {
     font-size: 21px;
     line-height: 26px;
     font-weight: normal;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 .index-footer {
     position: absolute;
@@ -483,8 +488,8 @@ h3 {
     float: left;
     margin-left: 101px;
     text-align: center;
-    margin-right: 155px;
-    margin-top: 50px;
+    margin-right: 160px;
+    margin-top: 48px;
 } 
 .hashtag {
     padding: 0;
@@ -494,20 +499,18 @@ h3 {
     float: left;
     width: 280px;
     text-align: center;
-    margin-right: 116px;
-    margin-top: 36px;
+    margin-right: 110px;
+    margin-top: 35px;
 }  
 .btn-social {
     display: inline-block;
     width: 46px;
     height: 48px;
-    margin: 0 2px;
     font-size: 0;
     font-family: "symbols-sedona";
     vertical-align: top;
     text-decoration: none;
     background: #81b3d2;
-    position: relative;
     color: white;
     text-align: center;
 }
@@ -530,9 +533,9 @@ h3 {
     float: right;
     width: 200px; 
     font-size: 14px;
-    margin-top: 50px;
+    margin-top: 45px;
     position: relative;
-    margin-right: 110px;
+    margin-right: 97px;
     cursor: pointer;
 }
 .website {
@@ -556,34 +559,35 @@ h3 {
     background-position: -10px -128px;
 }
 .choice-hotel {
-    min-height: 220px;
+    min-height: 217px;
     background: url(../img/filter-background.jpg);
 }
 .legend-left, .legend-right {
-   float: left;
-   width: 240px;
-   color: white;
-   font-size: 14px;
-   line-height: 21px;
-   font-weight: normal;
-   font-family: "PT Sans", sans-serif;
-   height: 135px;
+    float: left;
+    width: 240px;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    font-family: "PT Sans", "Arial", sans-serif;
+    height: 135px;  
 }
 .legend-left h3, .legend-right h3{
-  margin: 30px 0;  
+    margin: 25px 0;
 }
 .legend-left {
     margin-left: 73px;
+    margin-right: 15px;
 }
 input[type="checkbox"] {
-   display: none;
+    display: none;
 }
 input[type="checkbox"]+label {
-   display: block;
-   padding-left: 40px;
-   position: relative;
-   margin-bottom: 25px;
-   cursor: pointer;
+    display: block;
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 25px;
+    cursor: pointer;
 }
 input[type="checkbox"]+label::before {
     content: "\2610";
@@ -608,18 +612,17 @@ input[type="checkbox"]:checked+label::before {
 }
 .search-content-right {
     float: right;
-    width: 330px;
+    width: 325px;
     margin-right: 73px;
-    margin-top: 30px;
+    margin-top: 27px;
     color: white;
     text-transform: uppercase;
 }
-.cost-form-intro {
+.search-content-right h3 {
+    display: block;
+    margin: 0px;
+    padding: 0px;
     margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 21px;
-    font-family: "PT Sans", sans-serif;
 }
 .cost-form {
     margin-bottom: 20px;
@@ -645,15 +648,15 @@ input[type="checkbox"]:checked+label::before {
     vertical-align: top;
     font-size: 14px;
     line-height: 34px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     cursor: pointer;
 }
 .cost-form .min-price, .cost-form .max-price {
-    width: 90px;
+    width: 85px;
     padding-left: 65px;
 }
 .cost-form input {
-    width: 50px;
+    width: 47px;
     margin: -1px;
     padding-left: 3px;
     color: inherit;
@@ -664,7 +667,7 @@ input[type="checkbox"]:checked+label::before {
 }
 .range-controls {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     margin-left: 10px;
 }
 .range-controls .scale {
@@ -718,7 +721,7 @@ input[type="checkbox"]:checked+label::before {
     background-color: white;
     font-size: 12px;
     line-height: 18px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 .filter-sorting h2{
     float: left;
@@ -766,25 +769,31 @@ input[type="checkbox"]:checked+label::before {
 .dir {
     font-size: 0px;
 }
-.icon-up-dir, .icon-down-dir {
-    color: #cccccc;
+.icon-dir {
+    margin-top: 32px;
     display: inline-block;
-    margin-top: 35px;
+    color: #cccccc;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: top;
+}
+.icon-down-dir, .icon-up-dir {
+    font-family: "symbols-sedona";
     font-size: 23px;
     line-height: 20px;
-    cursor: pointer;  
-} 
-.icon-down-dir {
-    color: #81b3d2;
-} 
-.dir a:hover {
-    color: #000000;   
 }
-.dir a:active {
+.icon-dir:last-child {
     color: #81b3d2;   
 }
+.icon-dir:hover {
+    color: #000000;   
+}
+.icon-dir:active {
+    color: #81b3d2;
+}
 .icon-up-dir {
-    margin-left: 480px;
+    margin-left: 485px;
+    margin-right: -15px; 
 }
 .results {
     background: white;
@@ -806,21 +815,22 @@ input[type="checkbox"]:checked+label::before {
 }
 .star{
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 27px;
     float: right;
-    margin-right: 70px;
-    margin-bottom: 30px;
+    margin-right: 66px;
+    margin-bottom: 25px;
 }
 .star span {
     line-height: 21px;
     color: #81b3d2;
-    font-size: 20px; 
+    font-size: 20px;
+    margin-left: -5px;
 }
 .detail, .reserve {
     display: inline-block;
     font-size: 14px;
     line-height: 21px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     vertical-align: top;
     text-decoration: none;
     color: white;
@@ -830,9 +840,7 @@ input[type="checkbox"]:checked+label::before {
 } 
 .detail {
     width: 110px;
-    height: 24px;
     background: #81b3d2;
-    padding-top: 3px;
 }
 .detail:hover {
     background: #669ec0;
@@ -857,7 +865,7 @@ input[type="checkbox"]:checked+label::before {
 }
 .image-hotel img{
     width: 135px;
-    height: 91px;
+    height: 90px;
 }
 .type-hotel {
     float: left;
@@ -867,11 +875,11 @@ input[type="checkbox"]:checked+label::before {
 .name-hotel {
     display: block;
     margin-top: -4px;
-    margin-bottom: 0;
+    margin-bottom: -2px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Arial", sans-serif;
     text-decoration: none;
     color: #000000;
 }
@@ -883,7 +891,7 @@ input[type="checkbox"]:checked+label::before {
 }
 .hotel-detail {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 3px;
     min-height: 60px;
 }
 .hotel-detail p {
@@ -901,25 +909,25 @@ input[type="checkbox"]:checked+label::before {
     margin-right: 73px;
     font-size: 14px;
     line-height: 21px;
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 @-webkit-keyframes bounce { 
-0% { 
--webkit-transform: translateY(-130px); 
+    0% { 
+    -webkit-transform: translateY(-130px); 
         transform: translateY(-130px); 
-} 
-100% { 
--webkit-transform: translateY(0px); 
+     } 
+     100% { 
+     -webkit-transform: translateY(0px); 
         transform: translateY(0px); 
-}
+      }
 } 
 @keyframes bounce { 
-0% { 
--webkit-transform: translateY(-130px); 
+     0% { 
+     -webkit-transform: translateY(-130px); 
         transform: translateY(-130px); 
-} 
-100% { 
--webkit-transform: translateY(0px); 
+     } 
+     100% { 
+     -webkit-transform: translateY(0px); 
         transform: translateY(0px); 
-}
+      }
 }

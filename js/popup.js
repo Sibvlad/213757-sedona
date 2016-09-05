@@ -16,12 +16,12 @@ link.addEventListener("click", function(event) {
 
 form.addEventListener("submit", function(event) {
     if(!arrival.value || !departure.value || !adulte.value || !child.value)   {
-    event.preventDefault();
-    console.log("Нужно ввести поля");
+     event.preventDefault();
+     console.log("Нужно ввести поля");
     } else {
-    localStorage.setItem("adulte", adulte.value);
-    localStorage.setItem("child", child.value);    
-}
+     localStorage.setItem("adulte", adulte.value);
+     localStorage.setItem("child", child.value);    
+    }
 });
 
     
