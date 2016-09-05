@@ -1,7 +1,10 @@
 # Личный проект «Седона»
+ 
+Готово к финальной проверке.
 
 * Студент: [Владислав Сибирев](https://up.htmlacademy.ru/htmlcss/14/user/213757).
-* Наставник: [Денис Байдаров] (https://up.htmlacademy.ru/htmlcss/14/user/7956).
+* Наставник: [Денис Байдаров] (https://up.htmlacademy.ru/htmlcss/14/user/7956). 
+
 
 ---
 
