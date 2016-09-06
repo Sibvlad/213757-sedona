@@ -32,6 +32,7 @@ body {
     font-style: normal;
     font-variant: normal;
     speak: none;
+    vertical-align: top;
 }
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
@@ -45,7 +46,7 @@ body {
 .icon-minus::before { content: "\e802"; } /* "" */
 .icon-youtube::before { content: "\f39e"; } /* "" */
 .sprite {
-    background-image: url(spritesheet.png);
+    background-image: #ffffff url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -178,7 +179,7 @@ h3 {
     height: 650px;
     background: 
     url(../img/background-white.png) no-repeat center bottom,
-    url(../img/background-1.jpg) no-repeat;
+    url(../img/background-1.jpg) no-repeat #e3f0f9;
     padding-top: 75px;
 }
 .sedona-welcome-image {
@@ -313,6 +314,7 @@ h3 {
     line-height: 26px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
+    vertical-align: top;
 }
 .research-form {
     position: absolute;
@@ -360,6 +362,7 @@ h3 {
    display: inline-block;
    float: left;
    border: 0px;
+   vertical-align: top;
 } 
 .date-search input {
     width: 330px;
@@ -454,6 +457,7 @@ h3 {
     border: none;
     outline: none;
     cursor: pointer;
+    vertical-align: top;
 }
 .btn-research:hover {
     background: #669ec0;
@@ -462,12 +466,9 @@ h3 {
     color: rgba(0, 0, 0, 0.3);
 }
 .map-research  {
-    background: url("../img/map.jpg") no-repeat;
+    background: #cbdda9 url("../img/map.jpg") no-repeat;
     width: 100%;
     height: 593px;
-}
-.no-js .map-reseach img {
-    display: block;
 }
 .main-footer {
     width: 1200px;
@@ -519,6 +520,7 @@ h3 {
     font-size: 19px;
     line-height: 20px;
     margin-top: 15px;
+    vertical-align: top;
 }
 .btn-social:hover {
     background: #669ec0;  
@@ -544,7 +546,7 @@ h3 {
 }
 .footer-link a::after {
     content: "";
-    background: url(../img/spritesheet.png) no-repeat;
+    background:  url(../img/spritesheet.png) no-repeat;
     position: absolute;
     width: 113px;
     height: 39px;
@@ -560,7 +562,7 @@ h3 {
 }
 .choice-hotel {
     min-height: 217px;
-    background: url(../img/filter-background.jpg);
+    background: #d7e5f0 url(../img/filter-background.jpg);
 }
 .legend-left, .legend-right {
     float: left;
@@ -599,10 +601,10 @@ input[type="checkbox"]+label::before {
     left: 0;
     font-size: 26px;
     font-family: "symbols-sedona";
-    opacity: 0.7;
+    opacity: 1; 
 }
-input[type="checkbox"]+label:hover::before {
-    opacity: 1;
+input[type="checkbox"]:disabled+label::before {
+    opacity: 0.7; 
 }
 input[type="checkbox"]+label:hover::before {
     opacity: 1;
@@ -728,6 +730,7 @@ input[type="checkbox"]:checked+label::before {
     display: inline-block;
     margin-top: 30px;
     margin-left: 73px;
+    vertical-align: top;
 }
 .sorting {
     float: left;
@@ -736,6 +739,7 @@ input[type="checkbox"]:checked+label::before {
     margin-left: 50px;
     margin-top: 35px;
     margin-right: 35px;
+    vertical-align: top;
 }
 .parameters {
     float: left;
@@ -747,6 +751,7 @@ input[type="checkbox"]:checked+label::before {
 .parameters li {
     display: inline-block;
     margin-right: 30px;
+    vertical-align: top;
 }
 .parameters li:last-child {
     margin-right: 0px;
@@ -813,18 +818,31 @@ input[type="checkbox"]:checked+label::before {
     height: auto;
     font-size: 0px;
 }
-.star{
-    display: inline-block;
+.star {
     margin-top: 27px;
     float: right;
-    margin-right: 66px;
+    margin-right: 73px;
     margin-bottom: 25px;
+    display: block;
+    float: right;
+    width: 102px;
 }
-.star span {
+.icon-star {
     line-height: 21px;
     color: #81b3d2;
     font-size: 20px;
-    margin-left: -5px;
+    letter-spacing: 8px;
+}
+.icon-star-four::before {
+    content:"\2605\2605\2605\2605";
+}
+.icon-star-two::before {
+    content:"\2605\2605";
+    margin-left: 60px;
+}
+.icon-star-three::before {
+    content:"\2605\2605\2605";
+    margin-left: 35px;
 }
 .detail, .reserve {
     display: inline-block;
@@ -863,14 +881,11 @@ input[type="checkbox"]:checked+label::before {
 .image-hotel {
     float: left;
 }
-.image-hotel img{
-    width: 135px;
-    height: 90px;
-}
 .type-hotel {
     float: left;
     display: inline-block;
     margin-left: 30px;
+    vertical-align: top;
 }
 .name-hotel {
     display: block;
@@ -893,6 +908,7 @@ input[type="checkbox"]:checked+label::before {
     display: inline-block;
     margin-right: 3px;
     min-height: 60px;
+    vertical-align: top;
 }
 .hotel-detail p {
     display: block;
@@ -910,6 +926,7 @@ input[type="checkbox"]:checked+label::before {
     font-size: 14px;
     line-height: 21px;
     font-family: "PT Sans", "Arial", sans-serif;
+    vertical-align: top;
 }
 @-webkit-keyframes bounce { 
     0% { 
