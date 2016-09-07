@@ -15,7 +15,7 @@ body {
     font-style: normal;
     font-family: "symbols-sedona";
     src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+    url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
@@ -86,6 +86,7 @@ h2 {
     width: 180px;
     margin: 0 auto;
     margin-bottom: 25px;
+    
 }
 .background-blue h2 {
     color: #ffffff;
@@ -96,12 +97,12 @@ h3 {
     line-height: 21px;
     color: #ffffff;
     font-weight: bold;
-    font-family: "PT Sans", "Arial", sans-serif;    
+    font-family: "PT Sans", "Arial", sans-serif;
 }
 .features p {
     margin: 0 auto;
-    padding-bottom: 20px;
-    width: 300px;  
+    margin-bottom: 20px;
+    width: 300px;
  }
 .container, .main-header, main, footer {
     width: 1200px;
@@ -110,8 +111,9 @@ h3 {
 .container {
     display: block;
     box-shadow: 10px 0 10px 0 #dedede,
-        -10px 0 10px 0 #dedede;
+    -10px 0 10px 0 #dedede;
     position: relative;
+    background: white;
 }
 .main-header {
     min-height: 56px;
@@ -179,8 +181,9 @@ h3 {
     height: 650px;
     background: 
     url(../img/background-white.png) no-repeat center bottom,
-    url(../img/background-1.jpg) no-repeat #e3f0f9;
+    #e3f0f9 url(../img/background-1.jpg) no-repeat;
     padding-top: 75px;
+    float: left;
 }
 .sedona-welcome-image {
     width: 460px;
@@ -192,7 +195,7 @@ h3 {
 .intro-text {
     display: block;
     width: 100%;
-    height: 275px;
+    min-height: 275px;
     padding-top: 115px;
 }
 .intro-text h2 {
@@ -210,9 +213,10 @@ h3 {
     text-align: center;
 }
 .features {
-    width: 100%;
-    min-height: 255px;
-    text-align: center;   
+    width: 1200px;
+    height: 255px;
+    text-align: center;
+    float: left;
 }
 .background-blue {
     background: #81b3d2;
@@ -221,7 +225,7 @@ h3 {
 .background-blue .features-words {
     float: left;
     width: 400px; 
-    margin-top: 54px;
+    margin-top: 55px;
 }
 .background-blue p {
     width: 306px;
@@ -231,13 +235,15 @@ h3 {
 }
 .features-advantage {
     min-height: 185px;
-    padding-top: 60px;
+    padding-top: 58px;
     padding-bottom: 85px;
     background: white;
+    width: 1200px;
+    float: left;
 }
 .features-advantage h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 21px;
+    margin-bottom: 21px;
 }
 .features-item {
     float: left;
@@ -303,7 +309,7 @@ h3 {
     margin-top: 0px;
     cursor: pointer;
 }
-.research-top a{
+.research-top a {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -330,7 +336,7 @@ h3 {
 .research-form-show {
     display: block;
     -webkit-animation: bounce 0.6s;
-            animation: bounce 0.6s;
+    animation: bounce 0.6s;
 }
 .research-form-inner {
     position: relative;
@@ -359,10 +365,10 @@ h3 {
     font-size: 0;
 }
 .date-search label, .date-search input {
-   display: inline-block;
-   float: left;
-   border: 0px;
-   vertical-align: top;
+    display: inline-block;
+    float: left;
+    border: 0px;
+    vertical-align: top;
 } 
 .date-search input {
     width: 330px;
@@ -372,7 +378,7 @@ h3 {
     padding-left: 15px;
 } 
 .date-search input:hover {
-    background: #ebebeb;   
+    background: #ebebeb;
 }
 .date-search input:active {
     background: #ffffff;
@@ -406,7 +412,7 @@ h3 {
     margin-left: -5px;
 }
 .count label, .count input, .count button {
-    float: left;  
+    float: left;
 } 
 .count input, .count button {
     width: 38px;
@@ -433,13 +439,13 @@ h3 {
     color: #81b3d2;
 }
 .count label {
-    margin-right: 25px;  
+    margin-right: 25px;
 }
 .count label:first-child {
-    margin-right: 38px;  
+    margin-right: 38px;
 }
 .count-adulte .icon-plus {
-    margin-right: 54px;  
+    margin-right: 54px;
 }
 .btn-research {
     width: 458px;
@@ -465,7 +471,7 @@ h3 {
 .btn-research:active {
     color: rgba(0, 0, 0, 0.3);
 }
-.map-research  {
+.map-research {
     background: #cbdda9 url("../img/map.jpg") no-repeat;
     width: 100%;
     height: 593px;
@@ -502,7 +508,7 @@ h3 {
     text-align: center;
     margin-right: 110px;
     margin-top: 35px;
-}  
+}
 .btn-social {
     display: inline-block;
     width: 46px;
@@ -523,7 +529,7 @@ h3 {
     vertical-align: top;
 }
 .btn-social:hover {
-    background: #669ec0;  
+    background: #669ec0;
 }
 .btn-social:active span {
     opacity: 0.3;
@@ -544,9 +550,12 @@ h3 {
     padding: 0;
     margin: 0;
 }
+.logo-bottom {
+    font-size: 0px;
+}
 .footer-link a::after {
     content: "";
-    background:  url(../img/spritesheet.png) no-repeat;
+    background: url(../img/spritesheet.png) no-repeat;
     position: absolute;
     width: 113px;
     height: 39px;
@@ -554,10 +563,10 @@ h3 {
     right: 5px;
     background-position: -10px -10px;
 }
-.footer-link a:hover::after  {
+.footer-link a:hover::after {
     background-position: -10px -69px;
 }
-.footer-link a:active::after  {
+.footer-link a:active::after {
     background-position: -10px -128px;
 }
 .choice-hotel {
@@ -572,9 +581,9 @@ h3 {
     line-height: 21px;
     font-weight: normal;
     font-family: "PT Sans", "Arial", sans-serif;
-    height: 135px;  
+    height: 135px;
 }
-.legend-left h3, .legend-right h3{
+.legend-left h3, .legend-right h3 {
     margin: 25px 0;
 }
 .legend-left {
@@ -669,7 +678,7 @@ input[type="checkbox"]:checked+label::before {
 }
 .range-controls {
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     margin-left: 10px;
 }
 .range-controls .scale {
@@ -702,9 +711,9 @@ input[type="checkbox"]:checked+label::before {
     left: 80%;
 }
 .btn-transparent {
-    width: 132px;
+    width: 136px;
     display: block;
-    height: 30px;
+    height: 35px;
     border: 2px solid #ffffff;
     margin: 0 auto;
     background: transparent; 
@@ -712,7 +721,7 @@ input[type="checkbox"]:checked+label::before {
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
-    outline: none;   
+    outline: none; 
 }
 .btn-transparent:hover {
     background: #ffffff;
@@ -725,7 +734,7 @@ input[type="checkbox"]:checked+label::before {
     line-height: 18px;
     font-family: "PT Sans", "Arial", sans-serif;
 }
-.filter-sorting h2{
+.filter-sorting h2 {
     float: left;
     display: inline-block;
     margin-top: 30px;
@@ -759,13 +768,13 @@ input[type="checkbox"]:checked+label::before {
 .filter {
     text-decoration: none; 
     border-bottom: 1px dashed;
-    color:  #c7c7c7
+    color: #c7c7c7
 }
 .filter:hover {
-    color: #9ac2db;  
+    color: #9ac2db;
 }
 .filter:active {
-    color: #444444;  
+    color: #444444;
 }
 .sorting-active {
     text-decoration: none; 
@@ -788,10 +797,10 @@ input[type="checkbox"]:checked+label::before {
     line-height: 20px;
 }
 .icon-dir:last-child {
-    color: #81b3d2;   
+    color: #81b3d2; 
 }
 .icon-dir:hover {
-    color: #000000;   
+    color: #000000;
 }
 .icon-dir:active {
     color: #81b3d2;
@@ -825,24 +834,24 @@ input[type="checkbox"]:checked+label::before {
     margin-bottom: 25px;
     display: block;
     float: right;
-    width: 102px;
+    width: 90px;
 }
 .icon-star {
     line-height: 21px;
     color: #81b3d2;
     font-size: 20px;
-    letter-spacing: 8px;
+    letter-spacing: 6px;
 }
 .icon-star-four::before {
     content:"\2605\2605\2605\2605";
 }
 .icon-star-two::before {
     content:"\2605\2605";
-    margin-left: 60px;
+    margin-left: 50px;
 }
 .icon-star-three::before {
     content:"\2605\2605\2605";
-    margin-left: 35px;
+    margin-left: 27px;
 }
 .detail, .reserve {
     display: inline-block;
@@ -931,20 +940,20 @@ input[type="checkbox"]:checked+label::before {
 @-webkit-keyframes bounce { 
     0% { 
     -webkit-transform: translateY(-130px); 
-        transform: translateY(-130px); 
-     } 
-     100% { 
-     -webkit-transform: translateY(0px); 
-        transform: translateY(0px); 
-      }
+    transform: translateY(-130px); 
+    } 
+    100% { 
+    -webkit-transform: translateY(0px); 
+    transform: translateY(0px); 
+    }
 } 
 @keyframes bounce { 
      0% { 
-     -webkit-transform: translateY(-130px); 
-        transform: translateY(-130px); 
-     } 
-     100% { 
-     -webkit-transform: translateY(0px); 
-        transform: translateY(0px); 
-      }
+    -webkit-transform: translateY(-130px); 
+    transform: translateY(-130px); 
+    } 
+    100% { 
+    -webkit-transform: translateY(0px); 
+    transform: translateY(0px); 
+    }
 }
