@@ -382,14 +382,14 @@ h3 {
 .date-form:hover {
     background: #ebebeb;
 }
-.date-form:active {
+.date-form:focus {
     background: #ffffff;
     border: 1px solid #e5e5e5;
 }
 .date-search label {
     margin-right: 23px;
 }
-#departure-field {
+.label-departure {
     margin-left: -5px;
 }
 .icon-calendar {
@@ -434,6 +434,7 @@ h3 {
     line-height: 26px;
     font-family: "symbols-sedona";
     padding: 10px 0;
+    height: 37px;
 }
 .count button:hover {
     color: black;
